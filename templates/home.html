@@ -5,12 +5,11 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Vice Versa</h1>
-    <form action="#">
-        <textarea name="usertext" id="" cols="50" rows="10" placeholder="Enter your text here"></textarea>
-        <br><br>
-        <button type="submit">Reverse!</button>
-    </form>
-    <p>Some text</p>
+<h1>Vice Versa</h1>
+<form action="{% url 'reverse' %}">
+    <textarea name="usertext" id="" cols="50" rows="10" placeholder="Enter your text here"></textarea>
+    <br><br>
+    <button type="submit">Reverse!</button>
+</form>
 </body>
 </html>
