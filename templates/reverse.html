@@ -5,13 +5,12 @@
     <title>Reverse</title>
 </head>
 <body>
+<h1>Original Text has {{count}} words</h1>
+Your text is: {{usertext}}
+<br><br>
 <h1>Reversed Text</h1>
-<p>
-    Your text is: {{usertext}}
-    <br><br>
-    Reversed text is: {{reversedtext}}
-    <br><br>
-</p>
+Reversed text is: {{reversedtext}}
+<br><br>
 <form action="{% url 'home' %}">
     <button type="submit">Homepage</button>
 </form>
